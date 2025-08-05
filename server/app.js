@@ -9,6 +9,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/", contactRouter);
 
-app.listen(3010, () => {
-  console.log("Server is running on port http://localhost:3010");
+app.listen(PORT, () => {
+  console.log("Server is running on port http://localhost:${PORT}");
 });
